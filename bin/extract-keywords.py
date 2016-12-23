@@ -3,9 +3,11 @@
 import argparse
 import codecs
 import os
+
 from prake import Extractor
 
 if __name__ == "__main__":
+
 	parser = argparse.ArgumentParser(description='Extract keywords from a given text')
 	parser.add_argument('-l','--lang',default='en')
 	parser.add_argument('-i','--input',required=True)
@@ -23,7 +25,7 @@ if __name__ == "__main__":
 	output_file_name     = output_file_basename
 	while os.path.isfile(output_file_name):
 		output_file_name = output_file_basename+'.'+str(output_file_version)
-		output_file_version+=1		
+		output_file_version+=1
 	output_file= codecs.open(output_file_name,"w","utf-8")
 
 	text_sample = ""
@@ -35,4 +37,4 @@ if __name__ == "__main__":
         	output_file.write(keyword[0])
 		output_file.write("\n")
 	input_file.close()
-	output_file.close()	 
+	output_file.close()
