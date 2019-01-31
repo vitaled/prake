@@ -23,7 +23,7 @@ $ python setup.py install
 
 ### Usage
 
-prake can be used has as a library:
+prake can be used as a library:
 
 **Example:**
 
@@ -34,7 +34,7 @@ extractor = Extractor() #Default lang is "en"
 keywords  = extractor.extract_keywords(text_sample)
 ```
 
-The package also provide the script *extract-keywords.py* that can be used to extract keywords from a text file and save them to an other file
+The package also provides the script *extract-keywords.py* that can be used to extract keywords from a text file and save them to an other file
 
 **Example:**
 
