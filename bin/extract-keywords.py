@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf8 -*-
 import argparse
 import codecs
@@ -34,7 +34,7 @@ if __name__ == "__main__":
         	text_sample+=' '+line.strip()
 
 	for keyword in extractor.extract_keywords(text_sample):
-        	output_file.write(keyword[0])
+		output_file.write(keyword[0])
 		output_file.write("\n")
 	input_file.close()
 	output_file.close()
