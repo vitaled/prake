@@ -7,10 +7,7 @@ setup(name='prake',
       author='Daniele Vitale',
       author_email='vitaled@gmail.com',
       license='Apache',
-      packages=find_packages(),	
-      package_data = {'data':['*.txt']},
+      packages=['prake'],	
+      package_data = {'prake':['data/*.txt']},
       include_package_data=True,
       zip_safe=False)
-
-      #packages=['prake'],
-
